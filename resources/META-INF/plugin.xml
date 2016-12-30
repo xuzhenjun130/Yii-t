@@ -2,7 +2,7 @@
   <id>com.xu</id>
   <name>Yii::t</name>
   <version>1.1</version>
-  <vendor email="412530435@qq.com" url="http://www.xuphp.com">sherman</vendor>
+  <vendor email="412530435@qq.com" url="https://github.com/xuzhenjun130/Yii-t">sherman</vendor>
 
   <description><![CDATA[
       Yii::t helper.<br>
