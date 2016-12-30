@@ -1,0 +1,46 @@
+<idea-plugin version="2">
+  <id>com.xu</id>
+  <name>Yii::t</name>
+  <version>1.1</version>
+  <vendor email="412530435@qq.com" url="http://www.xuphp.com">sherman</vendor>
+
+  <description><![CDATA[
+      Yii::t helper.<br>
+      <em> Yii::t("site","translate") autocomplete</em>
+      <ul>
+        <li>1.select the text "translate"</li>
+        <li>2.Alt+3</li>
+        <li>3. Yii::t("site","translate") has autocomplete </li>
+      </ul>
+    ]]></description>
+
+  <change-notes><![CDATA[
+
+    ]]>
+  </change-notes>
+
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
+  <idea-version since-build="145" until-build="171.*"/> <!-- any 162-based version, 162.94, 162.94.11, etc.-->
+  <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
+       on how to target different products -->
+  <!-- uncomment to enable plugin in all products
+  <depends>com.intellij.modules.lang</depends>
+  -->
+  <depends>com.jetbrains.php</depends>
+  <depends>com.intellij.modules.platform</depends>
+
+  <extensions defaultExtensionNs="com.intellij">
+    <!-- Add your extensions here -->
+  </extensions>
+
+  <actions>
+    <!-- Add your actions here -->
+    <action id="EditorIllustration" class="com.xu.EditorIllustrationAction" text="Yii::t complete" description="Yii::t helper">
+      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+      <keyboard-shortcut keymap="$default" first-keystroke="alt 3"/>
+    </action>
+
+  </actions>
+
+
+</idea-plugin>
