@@ -1,10 +1,10 @@
-<idea-plugin version="2">
-  <id>com.xu</id>
-  <name>Yii::t</name>
-  <version>1.1</version>
-  <vendor email="412530435@qq.com" url="https://github.com/xuzhenjun130/Yii-t">sherman</vendor>
+<idea-plugin>
+    <id>com.xu</id>
+    <name>Yii::t</name>
+    <version>1.2</version>
+    <vendor email="412530435@qq.com" url="https://github.com/xuzhenjun130/Yii-t">sherman</vendor>
 
-  <description><![CDATA[
+    <description><![CDATA[
       Yii::t helper.<br>
       <em> Yii::t("site","translate") autocomplete</em>
       <ul>
@@ -15,12 +15,13 @@
     ]]></description>
 
   <change-notes><![CDATA[
-
+      fix bug.<br>
     ]]>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="145" until-build="171.*"/> <!-- any 162-based version, 162.94, 162.94.11, etc.-->
+  <idea-version since-build="145.0"/>
+
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
   <!-- uncomment to enable plugin in all products
@@ -35,12 +36,10 @@
 
   <actions>
     <!-- Add your actions here -->
-    <action id="EditorIllustration" class="com.xu.EditorIllustrationAction" text="Yii::t complete" description="Yii::t helper">
-      <add-to-group group-id="EditorPopupMenu" anchor="first"/>
-      <keyboard-shortcut keymap="$default" first-keystroke="alt 3"/>
-    </action>
-
+      <action id="com.xu.YiiAction" class="com.xu.YiiAction"   text="Yii::t complete" description="Yii::t helper" >
+          <add-to-group group-id="EditorPopupMenu" anchor="first"/>
+          <keyboard-shortcut keymap="$default" first-keystroke="alt 3"/>
+      </action>
   </actions>
-
 
 </idea-plugin>

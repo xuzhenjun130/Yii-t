@@ -1,17 +1,19 @@
 package com.xu;
 
+import org.jetbrains.annotations.NotNull;
+
 /**
  * zhenjun.xu
  * 2016/12/30
  */
-public class Common {
+class Common {
 
     /**
      *  根据文件路径，生成 Yii::t 所需的分类名称
-     * @param filePath
-     * @return
+     * @param filePath 路径
+     * @return 分类名称
      */
-    public static String getYiiTName(String filePath){
+    static String getYiiTName(String filePath){
         String[] pathArray = filePath.split("/");
         String module = "";
         String controller = "";
@@ -49,20 +51,20 @@ public class Common {
 
     /**
      * 首字母大写
-     * @param name
-     * @return
+     * @param name 字符串
+     * @return 首字母大写
      */
-    public static String toUpperCaseFirstOne(String name) {
+    private static String toUpperCaseFirstOne(String name) {
         char[] cs=name.toCharArray();
         cs[0]-=32;
         return String.valueOf(cs);
     }
     /**
      * 首字母转小写
-     * @param s
-     * @return
+     * @param s  字符串
+     * @return 首字母大写
      */
-    public static String toLowerCaseFirstOne(String s){
+    private static String toLowerCaseFirstOne(String s){
         if(Character.isLowerCase(s.charAt(0)))
             return s;
         else
@@ -74,10 +76,10 @@ public class Common {
      * 返回一个单元顺序相反的数组
      * 当 arr 为 null 时返回 new String[0] 。
      *
-     * @param arr
-     * @return
+     * @param arr 数组
+     * @return 数组
      */
-    public static String[] reverse(String[] arr) {
+    private static String[] reverse(String[] arr) {
         String[] rarr = new String[0];
         if (arr != null) {
             rarr = new String[arr.length];
