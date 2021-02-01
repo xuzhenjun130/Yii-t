@@ -1,7 +1,7 @@
 <idea-plugin>
     <id>com.xu</id>
     <name>Yii::t</name>
-    <version>1.2</version>
+    <version>1.3</version>
     <vendor email="412530435@qq.com" url="https://github.com/xuzhenjun130/Yii-t">sherman</vendor>
 
     <description><![CDATA[
@@ -15,12 +15,12 @@
     ]]></description>
 
   <change-notes><![CDATA[
-      fix bug.<br>
+      Make it work with the latest versions.<br>
     ]]>
   </change-notes>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/build_number_ranges.html for description -->
-  <idea-version since-build="145.0"/>
+  <idea-version since-build="201.0"/>
 
   <!-- please see http://www.jetbrains.org/intellij/sdk/docs/basics/getting_started/plugin_compatibility.html
        on how to target different products -->
